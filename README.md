@@ -1,43 +1,43 @@
 # SmsDigitalChallenge
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sms_digital_challenge`. To experiment with that code, run `bin/console` for an interactive prompt.
+Gets an image for every keyword and build a collage with all downloaded images. This is my first ruby applicaton... So please do not be so harsh ;))
 
-TODO: Delete this and the text above, and describe your gem
+## Requirements
+
+1. ImageMagick command-line tool has to be installed. You can check if you have it installed by running
+
+    ```sh
+    $ convert -version
+    Version: ImageMagick 6.8.9-7 Q16 x86_64 2014-09-11 http://www.imagemagick.org
+    Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
+    Features: DPC Modules
+    Delegates: bzlib fftw freetype jng jpeg lcms ltdl lzma png tiff xml zlib
+    ```
+
+    **Only tested with version 6.8.9.8 !!**
+
+    For Windows you can download here: https://imagemagick.org/download/windows/releases/
+    
+2. Create an flickr.yml file and pass your flickr key to it
+    
+    ```
+    key: "YOUR KEY"
+    secret: "YOUR SECRET"
+    ```
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'sms_digital_challenge'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sms_digital_challenge
+1. git clone https://github.com/testbuddy/sms_digital_challenge.git
+2. cd sms_digital_challenge
+3. gem build sms_digital_challenge.gemspec
+4. gem install ./sms_digital_challenge-0.1.0.gem
 
 ## Usage
 
 TODO: Write usage instructions here
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sms_digital_challenge. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
-
-Everyone interacting in the SmsDigitalChallenge project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sms_digital_challenge/blob/master/CODE_OF_CONDUCT.md).
