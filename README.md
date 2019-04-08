@@ -34,7 +34,23 @@ Gets an image for every keyword and build a collage with all downloaded images. 
 
 ## Usage
 
-TODO: Write usage instructions here
+Inside the dir sms_digital_challenge call:
+
+```
+ruby ./exe/sms_digital_challenge --keywords hallo,test,huhu,interview,bewerbung -o 'ouput.jpg' -y 'flickr.yml'
+
+```
+
+**Important:** the keywords has to be in this form: hallo,test,huhu,interview,bewerbung
+
+Parameter:
+
+```
+-k, --keywords a list of keywords; delimiter: ','; default []
+-o, --output path to an output jpg file; default: 'output.jpg' inside the folder u call the exe
+-d, --dic path to an dic txt file; default: '../dic.txt' inside the gem folder
+-y, --flickr path to an flickr.yml
+```
 
 
 ## License
