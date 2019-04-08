@@ -16,7 +16,7 @@ Gets an image for every keyword and build a collage with all downloaded images. 
 
     **Only tested with version lower than 7 and higher than 6.8 !!**
 
-    For Windows you can download here: https://imagemagick.org/download/windows/releases/
+    For Windows you can download here: https://imagemagick.org/download/binaries/
     
 2. Create an flickr.yml file and pass your flickr key to it
     
