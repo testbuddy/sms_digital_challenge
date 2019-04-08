@@ -6,7 +6,8 @@ class Collage
   # rubocop:disable Metrics/AbcSize
   def build_collage(images)
     column_count = Integer.sqrt(images.length)
-    row_count = (images.length.to_f / column_count.to_f).ceil
+    row_count = 0
+    row_count = (images.length.to_f / column_count.to_f).ceil if column_count > 0
     max_width = calculate_max_width(images)
     create_background_image(max_width, column_count, row_count)
     background = MiniMagick::Image.new('./tmp/background.jpg')
