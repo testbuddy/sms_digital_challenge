@@ -1,3 +1,24 @@
 #!/usr/bin/env ruby
 
-require "sms_digital_challenge"
+require 'slop'
+require 'sms_digital_challenge'
+
+opts = Slop.parse do |o|
+  o.array '-k', '--keywords', 'a list of keywords', delimiter: ',', default: []
+  o.string '-o', '--output', 'path to an output jpg file', default: 'output.jpg'
+  o.string '-d', '--dic', 'path to an dic txt file', default: '../dic.txt'
+  o.string '-y', '--flickr', 'path to an flickr.yml'
+  o.on '--version', 'print the version' do
+    puts Slop::VERSION
+    exit
+  end
+end
+
+if opts[:flickr].nil?
+  raise(ArgumentError, 'you didnt give me a flickr.yml path')
+end
+
+if opts[:keywords] && opts[:output] && opts[:flickr]
+  downloader = SmsDigitalChallenge::ImageDownloader.new(opts[:flickr])
+  downloader.download(opts[:keywords])
+end
