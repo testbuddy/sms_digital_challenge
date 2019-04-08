@@ -25,8 +25,8 @@ module SmsDigitalChallenge
       raise(ArgumentError, 'you didnt give me a valid path to the dic') if
           !path_to_dic.is_a?(String) || !File.exist?(path_to_dic)
 
-      err_msg = 'the dic file is not a text file(.txt)' /
- 'or file size to big (16MB)'
+      err_msg = 'the dic file is not a text file(.txt) /
+ or file size to big (16MB)'
       raise(ArgumentError, err_msg) unless
           File.extname(path_to_dic) == '.txt' &&
           (File.size(path_to_dic).to_f / 2**20).round(2) <= 16
@@ -129,8 +129,8 @@ module SmsDigitalChallenge
               images_urls[keyword] = { url: photos.photos[0].url, value: value }
             end
           rescue
-            puts('could not get img path for keyword cause' /
-                     'of internet failure or your flickr key is not working')
+            puts('could not get img path for keyword cause /
+                     of internet failure or your flickr key is not working')
           end
         end
         if not_working_keywords.empty?
