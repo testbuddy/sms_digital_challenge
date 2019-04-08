@@ -1,6 +1,6 @@
 # SmsDigitalChallenge
 
-Gets an image for every keyword and build a collage with all downloaded images. This is my first ruby applicaton... So please do not be so harsh ;))
+Gets an image for every keyword and build a collage with all downloaded images. This is my first ruby application... So please do not be so harsh ;))
 
 ## Requirements
 
@@ -49,7 +49,7 @@ Parameter:
 -k, --keywords a list of keywords; delimiter: ','; default []
 -o, --output path to an output jpg file; default: 'output.jpg' inside the folder u call the exe
 -d, --dic path to an dic txt file; default: '../dic.txt' inside the gem folder
--y, --flickr path to an flickr.yml
+-y, --flickr path to the flickr.yml
 ```
 
 
