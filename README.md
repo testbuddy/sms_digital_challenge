@@ -14,7 +14,7 @@ Gets an image for every keyword and build a collage with all downloaded images. 
     Delegates: bzlib fftw freetype jng jpeg lcms ltdl lzma png tiff xml zlib
     ```
 
-    **Only tested with version 6.8.9.8 !!**
+    **Only tested with version lower than 7 and higher than 6.8 !!**
 
     For Windows you can download here: https://imagemagick.org/download/windows/releases/
     
