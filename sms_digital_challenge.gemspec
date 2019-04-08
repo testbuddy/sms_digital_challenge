@@ -36,11 +36,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 2.0'
-  spec.add_development_dependency 'flickr_fu', '~> 0.3.4'
-  spec.add_development_dependency 'mini_magick', '~> 4.9.3'
+  spec.add_dependency 'flickr_fu', '~> 0.3.4'
+  spec.add_dependency 'mini_magick', '~> 4.9'
   spec.add_development_dependency 'minitest', '~> 5.0'
-  spec.add_development_dependency 'parallel', '~> 1.17.0'
+  spec.add_dependency 'parallel', '~> 1.17'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rubocop', '~> 0.67.2'
-  spec.add_development_dependency 'slop', '~> 4.6.2'
+  spec.add_dependency 'slop', '~> 4.6'
 end
